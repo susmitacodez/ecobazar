@@ -5,7 +5,7 @@ const Home = () => {
   let data =useSelector((state)=> console.log(state))
   return (
    <>
-  <h1 className='text-hsize bg-hgreen'>EcoBazar</h1>
+  {/* <h1 className='text-hsize bg-hgreen'>EcoBazar</h1> */}
    </>
   
 )}
