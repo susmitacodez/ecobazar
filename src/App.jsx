@@ -7,19 +7,19 @@ import Login from './pages/Login';
 import MainLayout from './components/layouts/MainLayout';
 
 function App() {
-  
+
 
   return (
-    
-       <Routes>
-        <Route element={< MainLayout />} >
-      <Route path="/" element={< Home />} />
-      <Route path="/" element={< Registration />} />
-      <Route path="/" element={< Login />} />
+
+    <Routes>
+      <Route element={< MainLayout />} >
+        <Route path="/" element={< Home />} />
+        <Route path="/" element={< Registration />} />
+        <Route path="/" element={< Login />} />
       </Route>
-      
+
     </Routes>
-   
+
   )
 }
 
