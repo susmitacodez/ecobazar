@@ -54,7 +54,7 @@ const TopBar = () => {
               USD <FaAngleDown className='ml-1' />
             </div>
 
-             <div className='flex items-center relative after:w-0.5 after:h-3.75 after:bg-gry after:content-[""] after:top-0.5 after:left-3.75 after:absolute'>
+             <div className='flex items-center relative after:w-0.5 after:h-3.75 after:bg-gry after:content-[""] after:top-0.5 after:left-[-10px] after:absolute'>
                             Sign in / Sign Up
                         </div>
 
