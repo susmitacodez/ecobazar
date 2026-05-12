@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Outlet } from "react-router";
 import TopBar from "../TopBar";
 import Searchbar from "../Searchbar";
-import Navbar from "../Navbar";
 import Modal from "../Modal";
+import Navbar from "../Navbar";
 
 const MainLayout = () => {
   const [open, setOpen] = useState(false);
@@ -19,12 +19,13 @@ const MainLayout = () => {
     <>
       <TopBar />
       <Searchbar />
-      <Navbar />
+      <Navbar/>
       <Outlet />
-
+      
       <Modal isOpen={open} onClose={() => setOpen(false)} />
     </>
   );
 };
 
 export default MainLayout;
+

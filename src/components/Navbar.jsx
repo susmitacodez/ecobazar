@@ -1,80 +1,90 @@
-import React, { useState } from 'react'
+import React from 'react'
+import Container from './Container';
 import { FaAngleDown } from "react-icons/fa";
-import Container from './Container'
+import { IoMdMenu } from "react-icons/io";
+import { Link } from 'react-router';
 import { FiPhoneCall } from "react-icons/fi";
 
+
 const Navbar = () => {
-
-  const [selectedHome, setSelectedHome] = useState("Home");
-
-  const navItems = [
-    { name: "Home" },
-    { name: "Shop" },
-    { name: "Pages" },
-    { name: "Blog" },
-    { name: "About Us" },
-    { name: "Contact Us" },
-  ];
-
-  const dropdownMenu = [
-    "Eco",
-    "bazar",
-    "green",
-    "Chilli",
-    "red chili",
-  ];
-
   return (
     <>
-      <section className='bg-[#333333]'>
+       <div className='bg-[#1A1A1A] text-white'>
         <Container>
-          <div className='flex justify-between py-5.5'>
-            
-            <div>
-              <ul className='flex gap-13 text-[#999999] font-pop font-medium text-[14px]'>
 
-                {navItems.map((item, index) => (
-                  <li 
-                    key={index} 
-                    className='relative group cursor-pointer'
-                  >
-                    
-                    <div className='flex items-center gap-2 hover:text-white'>
-                      
-                      {item.name === "Home" ? selectedHome : item.name}
-                      <FaAngleDown className='transition-transform duration-300 group-hover:rotate-180' />
-                    </div>
+          <div className='flex items-center justify-between gap-x-8'>
 
-                    {item.name === "Home" && (
-                      <ul className='absolute top-full left-0 mt-2 w-37.5 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300'>
-                        
-                        {dropdownMenu.map((menu, i) => (
-                          <li 
-                            key={i}
-                            onClick={() => setSelectedHome(menu)}
-                            className='px-4 py-2 hover:bg-gray-100'
-                          >
-                            {menu}
-                          </li>
-                        ))}
+              <div className='flex items-center bg-[#333333]'>
+                <div className='bg-[#00B207] px-6 py-5'>
+                  <IoMdMenu className='text-[32px] text-white' />
+                </div>
+                <Link
+                  to="#"
+                  className='flex items-center gap-x-16 px-8 py-5 font-pop font-medium text-[16px] text-white'
+                >
+                  All Categories
+                  <FaAngleDown className='text-[14px]' />
+                </Link>
 
-                      </ul>
-                    )}
+              </div>
 
-                  </li>
-                ))}
+              <ul className='flex items-center gap-x-8 font-pop text-[16px] text-[#999999]'>
 
+                <li>
+                  <Link to="#" className='flex items-center gap-x-1 hover:text-[#ffffff] duration-300'>
+                    Home
+                    <FaAngleDown />
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="#" className='flex items-center gap-x-1 hover:text-[#ffffff] duration-300'>
+                    Shop
+                    <FaAngleDown />
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="#" className='flex items-center gap-x-1 hover:text-[#ffffff] duration-300'>
+                    Pages
+                    <FaAngleDown />
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="#" className='flex items-center gap-x-1 hover:text-[#ffffff] duration-300'>
+                    Blog
+                    <FaAngleDown />
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="#" className='hover:text-[#ffffff] duration-300'>
+                    About Us
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="#" className='hover:text-[#ffffff] duration-300'>
+                    Contact Us
+                  </Link>
+                </li>
               </ul>
-            </div>
+            <div>
 
-            <div className='flex items-center gap-2 text-[#FFFFFF]'>
-              <FiPhoneCall className='w-5'/>
-              <p className='font-pop font-medium text-[14px]'>(880) 13053-59520</p>
+              <Link
+                to="tel:01305359520"
+                className='flex gap-2 font-pop text-[14px] leading-[150%] font-medium items-center text-white'
+              >
+                <FiPhoneCall className='text-[20px]' />
+                01305-359520
+              </Link>
             </div>
 
           </div>
+
         </Container>
-      </section>
+      </div>
     </>
   )
 }
