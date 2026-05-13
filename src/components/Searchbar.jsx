@@ -4,15 +4,16 @@ import logo from '../assets/images/logo.png'
 import { FiSearch } from "react-icons/fi";
 import { GoHeart } from "react-icons/go";
 import { SlHandbag } from "react-icons/sl";
+import { Link } from 'react-router';
 
 const Searchbar = () => {
   return (
     <Container>
       <div className='flex justify-between items-center py-[27.5px]'>
 
-        <div>
+        <Link to="/">
           <img src={logo} alt="logo" />
-        </div>
+        </Link>
 
         <div className="w-full max-w-[40%] mx-auto">
           <div className="flex items-center border border-gray-300 rounded-md overflow-hidden">

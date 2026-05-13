@@ -4,6 +4,7 @@ import TopBar from "../TopBar";
 import Searchbar from "../Searchbar";
 import Modal from "../Modal";
 import Navbar from "../Navbar";
+import Footer from "../Footer"
 
 const MainLayout = () => {
   const [open, setOpen] = useState(false);
@@ -21,6 +22,7 @@ const MainLayout = () => {
       <Searchbar />
       <Navbar/>
       <Outlet />
+      <Footer/>
       
       <Modal isOpen={open} onClose={() => setOpen(false)} />
     </>

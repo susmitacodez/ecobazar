@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Registration from './pages/Registration';
 import Login from './pages/Login';
 import MainLayout from './components/layouts/MainLayout';
+import SignIn from './pages/SignIn';
 
 function App() {
 
@@ -14,8 +15,10 @@ function App() {
     <Routes>
       <Route element={< MainLayout />} >
         <Route path="/" element={< Home />} />
-        <Route path="/" element={< Registration />} />
-        <Route path="/" element={< Login />} />
+        <Route path="registration" element={< Registration />} />
+        <Route path="login" element={< Login />} />
+        <Route path="signin" element={< SignIn />} />
+        
       </Route>
 
     </Routes>
