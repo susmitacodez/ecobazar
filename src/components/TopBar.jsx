@@ -156,15 +156,11 @@ const TopBar = () => {
                       className='hover:bg-gray-200 cursor-pointer py-1 rounded'>
                       EUR
                     </li>
-
                   </ul>
-
                 </div>
               )}
-
             </div>
-
-            <Link to="/signin" className='flex items-center relative after:w-0.5 after:h-3.75 after:bg-gry after:content-[""] after:top-0.5 after:left-[-10px] after:absolute'>
+            <Link to="/signin" className='flex items-center relative after:w-0.5 after:h-3.75 after:bg-gry after:content-[""] after:top-0.5 after:left-[-10px] after:absolute hover:text-hgreen duration-300'>
               Sign in / Sign Up
             </Link>
           </div>

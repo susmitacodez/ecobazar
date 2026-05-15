@@ -182,16 +182,7 @@ const Navbar = () => {
                     Contact Us
                   </Link>
                 </li>
-                 <div className='flex items-center justify-between px-6 py-6 border-b border-[#D9D9D9]'>
-
-          <h2 className='font-pop font-semibold text-[14px] text-black'>
-            Categories
-          </h2>
-
-          <button onClick={() => setOpenMenu(false)}>
-            <FaTimes className='text-[14px] text-[#666666]' />
-          </button>
-        </div>
+                
               </ul>
 
               <div>
