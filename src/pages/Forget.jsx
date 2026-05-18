@@ -58,14 +58,9 @@ const Forget = () => {
               <button className='bg-hgreen hover:bg-green-700 duration-300 text-white font-pop font-semibold py-4 rounded-full mt-2'>
                 Verify email
               </button>
-
-              
-              <p className='text-center font-pop text-sm text-[#666666] mt-3'>
-                Don’t have account?{" "}
-                <Link to="/signin" className='text-[#1A1A1A] font-semibold cursor-pointer hover:text-hgreen duration-300'>
-                  back to login
+                <Link to="/signin" className='text-[#1A1A1A] underline text-center font-semibold cursor-pointer hover:text-hgreen hover:underline duration-300'>
+                  Back to login
                 </Link>
-              </p>
 
             </form>
           </div>
