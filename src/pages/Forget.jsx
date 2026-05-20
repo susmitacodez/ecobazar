@@ -50,12 +50,12 @@ const Forget = () => {
               <input
                 type="email"
                 placeholder='Email'
-                className='w-full border border-gry rounded-md px-4 py-3.5 outline-none'/>
+                className='w-full border border-gry text-[#999999] rounded-md px-4 py-3.5 outline-none'/>
 
               
 
              
-              <button className='bg-hgreen hover:bg-green-700 duration-300 text-white font-pop font-semibold py-4 rounded-full mt-2'>
+              <button className='bg-hgreen hover:bg-green-700 duration-300 text-white font-pop font-semibold py-3 rounded-full mt-2'>
                 Verify email
               </button>
                 <Link to="/signin" className='text-[#1A1A1A] underline text-center font-semibold cursor-pointer hover:text-hgreen hover:underline duration-300'>

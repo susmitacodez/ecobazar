@@ -41,23 +41,23 @@ const SignIn = () => {
         <Container>
           <div className="max-w-130 mx-auto rounded-2 rounded-[10px] bg-[#FFFFFF] border border-[#F2F2F2] shadow-[0px_0px_56px_rgba(0,38,3,0.08)] px-10 py-12">
             
-            <h2 className='font-pop font-semibold text-hsize text-center text-[#1A1A1A] mb-8'>
+            <h2 className='font-pop font-semibold text-[24px] text-center text-[#1A1A1A] mb-6'>
               Sign In
             </h2>
 
-            <form className='flex flex-col gap-y-5'>
+            <form className='flex flex-col gap-y-3'>
               
               <input
                 type="email"
                 placeholder='Email'
-                className='w-full border border-gry rounded-md px-4 py-3.5 outline-none'/>
+                className='w-full border border-gry rounded-md px-4 py-3 outline-none'/>
 
               
               <div className='relative'>
                 <input 
                 type="password"
                 placeholder='Password'
-                className='w-full border border-gry rounded-md px-4 py-3.5 outline-none' />
+                className='w-full border border-gry rounded-md px-4 py-3 outline-none' />
                 <IoEyeOutline className='absolute top-6.25 right-2.5 text-[#1A1A1A] -translate-y-1/2 text-[20px] cursor-pointer' /> 
 
               </div>
@@ -77,7 +77,7 @@ const SignIn = () => {
               </div>
 
              
-              <button className='bg-hgreen hover:bg-green-700 duration-300 text-white font-pop font-semibold py-4 rounded-full mt-2'>
+              <button className='bg-hgreen text-[12px] hover:bg-green-700 duration-300 text-white font-pop font-semibold py-3 rounded-full mt-2'>
                 Login
               </button>
 
