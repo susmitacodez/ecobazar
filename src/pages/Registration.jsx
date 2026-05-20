@@ -43,28 +43,6 @@ const Registration = () => {
   setErrorMsg("")
   setSuccessMsg("")
 
-  if (
-    !regData.email.trim() ||
-    !regData.password.trim() ||
-    !regData.confirmPassword.trim()
-  ) {
-    setErrorMsg("All fields are required")
-    toast.error("All fields are required")
-    return
-  }
-
-  if (regData.password !== regData.confirmPassword) {
-    setErrorMsg("Passwords do not match")
-    toast.error("Passwords do not match")
-    return
-  }
-
-  if (!regData.terms) {
-    setErrorMsg("Please accept terms & conditions")
-    toast.error("Please accept terms & conditions")
-    return
-  }
-
   try {
     const res = await axios.post(
       "http://localhost:5000/registration",
