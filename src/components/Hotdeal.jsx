@@ -12,7 +12,7 @@ import lettuce from "../assets/images/lettuce.jpg";
 import eggplant from "../assets/images/eggplant.jpg";
 import potato from "../assets/images/potato.jpg";
 import corn from "../assets/images/corn.jpg";
-import cauliflower from "../assets/images/Cauliflower.jpg";
+import cauliflower from "../assets/images/cauliflowers.png";
 import capsicum from "../assets/images/capsicum.jpg";
 import chili from "../assets/images/chili.jpg";
 
