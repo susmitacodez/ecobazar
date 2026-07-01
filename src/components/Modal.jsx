@@ -59,16 +59,16 @@ const Modal = ({ isOpen, onClose }) => {
 
           </p>
 
-          <div className="flex gap-2 relative">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className=" w-full border rounded-[46px] px-6 py-3.5 leading-[150%] font-pop  border-gry outline-none"
-            />
-            <button className="bg-green-600 font-pop font-semibold text-sm leading-[20px] text-white px-9.5 py-[15px] rounded-[43px] hover:bg-green-700 absolute top-0.5 right-0.5 cursor-pointer">
-              Subscribe
-            </button>
-          </div>
+         <div className="flex gap-2 relative">
+  <input
+    type="email"
+    placeholder="Enter your email"
+    className="w-full border rounded-[46px] px-6 py-3.5 pr-38 leading-[150%] font-pop border-gry outline-none"/>
+
+  <button className="bg-green-600 font-pop font-semibold text-sm leading-[20px] text-white px-9.5 py-[15px] rounded-[43px] hover:bg-green-700 absolute top-0.5 right-0.5 cursor-pointer">
+    Subscribe
+  </button>
+</div>
 
           <div className="mt-12.5 font-pop font-normal leading-[150%] flex items-center justify-center gap-2 text-sm text-gray-500">
             <input id="dontShow" type="checkbox" />

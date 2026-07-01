@@ -9,3 +9,78 @@
  --font-pop: "Poppins", sans-serif;
 
 }
+.swiper {
+  position: relative;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #9ca3af !important;  /* gray color */
+  width: 32px;
+  height: 32px;
+  z-index: 9999 !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  left: 5px !important;
+  top: 63% !important;
+  transform: translateY(-50%) scale(0.7);
+}
+
+
+.swiper-button-next {
+  right: 5px !important;
+  top: 63% !important;
+  transform: translateY(-50%) scale(0.7);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
