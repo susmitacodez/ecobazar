@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Banner from '../components/Banner';
-import Shipping from '../components/Shipping';
+import Benefits from '../components/Benefits';
 import Categories from '../components/Categories';
 import Product from '../components/Product';
 import Sale from '../components/Sale';
@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <Shipping />
+      <Benefits />
       <Categories/>
       <Product/>
       <Sale/>

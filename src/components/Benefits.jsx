@@ -15,7 +15,7 @@ const shippingData = [
   {
     icon: <FaShieldAlt />,
     title: "100% Secure Payment",
-    desc: "We ensure your money is safe",
+    desc: "We ensure your money is Safe",
   },
   {
     icon: <FaBoxOpen />,
@@ -24,7 +24,7 @@ const shippingData = [
   },
 ];
 
-const Shipping = () => {
+const Benefits = () => {
   return (
     <div className="w-full pt-6 pb-15 bg-[#FFFFFF]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
@@ -51,4 +51,4 @@ const Shipping = () => {
   );
 };
 
-export default Shipping;
+export default Benefits;
